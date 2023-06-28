@@ -168,7 +168,7 @@ hc set_monitors 1920x1080+0+0 1600x900+1920+0
 xrandr  --output eDP-1 --mode 1600x900 --output VGA-1 --mode 1920x1080 --left-of eDP-1
 
 # feh --bg-fill ~/wallpaper/wallhaven-618958.jpg &
-feh --bg-fill ~/wallpaper/cloud.png &
+feh --bg-fill wallpaper/cloud.png &
 killall stalonetray
 stalonetray --window-type=normal
 
