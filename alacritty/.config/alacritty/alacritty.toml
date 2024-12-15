@@ -1,0 +1,6 @@
+
+[font]
+size = 14
+
+[general]
+import = ["/home/marcel/.config/alacritty/themes/themes/gruvbox_light.toml"]

@@ -1,0 +1,7 @@
+[user]
+	email = marcel.wienoebst@gmx.de
+	name = Marcel Wienöbst
+[pull]
+	rebase = false
+[credential]
+	helper = cache
