@@ -12,7 +12,7 @@ return {
         html = { 'eslint_d' },
         javascript = { 'eslint_d' },
         markdown = { 'markdownlint' },
-        python = { 'flake8' },
+        python = { 'ruff' },
         rust = { 'clippy' },
       }
 
