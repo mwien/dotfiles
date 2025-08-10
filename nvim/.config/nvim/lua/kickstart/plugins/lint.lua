@@ -7,9 +7,7 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         cpp = { 'clangtidy' },
-        css = { 'stylelint' },
         go = { 'golangcilint' },
-        html = { 'eslint_d' },
         javascript = { 'eslint_d' },
         markdown = { 'markdownlint' },
         python = { 'ruff' },

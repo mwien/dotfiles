@@ -1,6 +1,8 @@
-
 [font]
 size = 14
 
+[window]
+padding = { x = 3, y = 1 }
+
 [general]
-import = ["/home/marcel/.config/alacritty/themes/themes/gruvbox_light.toml"]
+import = ["/home/marcel/.config/alacritty/theme.toml"]

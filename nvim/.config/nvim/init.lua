@@ -270,6 +270,8 @@ require('lazy').setup({
           --  For example, in C this would take you to the header.
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
+          map('H', vim.lsp.buf.hover, 'Show LSP Hover Documentation')
+
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
           --    See `:help CursorHold` for information about when this is executed
@@ -416,7 +418,9 @@ require('lazy').setup({
         html = { 'prettierd' },
         javascript = { 'prettierd' },
         lua = { 'stylua' },
-        python = { 'black' },
+        python = { 'ruff_format' },
+        -- tex = { 'tex-fmt' },
+        typescript = { 'prettierd' },
       },
     },
   },
@@ -533,7 +537,18 @@ require('lazy').setup({
       }
     end,
   },
-
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine-dawn',
+    config = function()
+      require("rose-pine").setup({
+        styles = {
+		italic = false,
+        },
+      })
+      vim.cmd('colorscheme rose-pine-dawn')
+    end,
+  },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
@@ -613,10 +628,13 @@ require('lazy').setup({
         'markdown',
         'markdown_inline',
         'query',
+        'r',
+        'rnoweb',
         'rust',
         'typescript',
         'vim',
         'vimdoc',
+        'yaml',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
@@ -654,6 +672,12 @@ require('lazy').setup({
       vim.g.vimtex_view_method = 'zathura'
       vim.g.vimtex_quickfix_open_on_warning = 0
     end,
+  },
+
+  {
+    'R-nvim/R.nvim',
+    -- Only required if you also set defaults.lazy = true
+    lazy = false,
   },
 
   --  Here are some example plugins that I've included in the Kickstart repository.
