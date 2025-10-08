@@ -538,16 +538,10 @@ require('lazy').setup({
     end,
   },
   {
-    'rose-pine/neovim',
-    name = 'rose-pine-dawn',
-    config = function()
-      require("rose-pine").setup({
-        styles = {
-		italic = false,
-        },
-      })
-      vim.cmd('colorscheme rose-pine-dawn')
-    end,
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
